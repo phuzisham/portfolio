@@ -8,7 +8,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+    <%= link_to('Home', root_path) %>
+    <h3 id='name'>David Hale</h3>
+  </header>
+  <br><br><br>
   <body>
-    <%= yield %>
+    <div class="container">
+      <% if flash[:alert] %>
+        <div class="card">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div class="card">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>
