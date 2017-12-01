@@ -1,7 +1,8 @@
 <% if @projects.any? %>
   <div class="card">
     <% @projects.each do |p| %>
-      <%= p.title %>
+      <h4><%= p.title %></h4>
+      <p><%= p.description %></p>
     <% end %>
   </div>
 <% else %>
