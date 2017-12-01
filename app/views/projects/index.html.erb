@@ -1,0 +1,11 @@
+<% if @projects.any? %>
+  <div class="card">
+    <% @projects.each do |p| %>
+      <%= p.title %>
+    <% end %>
+  </div>
+<% else %>
+  <div class="card">
+    <h4>No projects yet.</h4>
+  </div>
+<% end %>
