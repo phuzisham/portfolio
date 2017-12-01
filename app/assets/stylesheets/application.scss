@@ -1,9 +1,28 @@
 @import "bootstrap";
 
+$dusty: #96858F;
+$dustyLight: #ccb9c4;
+$lav: #6D7993;
+$overcast: #9099A2;
+$paper: #D5D5D5;
+
+$header: #A0B7C5;
+$body: #DCE4E7;
+
 header {
   padding: 10px;
+  background-color: $header;
 }
 
 header h3 {
   float: right;
+}
+
+body {
+  background-color: $body;
+}
+
+.card {
+  padding: 20px;
+  background-color: $lav;
 }
