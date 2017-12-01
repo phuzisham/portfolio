@@ -1,6 +1,6 @@
 class Projects < ActiveRecord::Migration[5.1]
   def change
-    create_table :images do |t|
+    create_table :projects do |t|
       t.string 'title'
       t.string 'description'
       t.timestamps
