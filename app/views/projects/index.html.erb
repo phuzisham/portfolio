@@ -2,8 +2,11 @@
   <div class="card">
     <% @projects.each do |p| %>
       <h4><%= p.title %></h4>
-      <%= image_tag(p.photo) %>
+      <div class="projectImage">
+        <%= image_tag(p.photo) %>
+      </div>
       <p><%= p.description %></p>
+      <hr>
     <% end %>
   </div>
 <% else %>
