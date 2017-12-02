@@ -10,8 +10,14 @@ $header: #A0B7C5;
 $body: #DCE4E7;
 
 header {
+  z-index: 1;
   padding: 10px;
   background-color: $header;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
 }
 
 header h3 {
@@ -26,10 +32,12 @@ body {
 .card {
   padding: 20px;
   background-color: $lav;
+  margin-bottom: 40px;
 }
 
-img {
+.projectImage img {
   width: 90%;
+  border-radius: 23px;
 }
 
 .projectImage {
