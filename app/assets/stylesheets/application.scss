@@ -16,7 +16,7 @@ $body: #DCE4E7;
 header {
   z-index: 1;
   padding: 10px;
-  background-color: $header;
+  background-color: #7481af;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,9 +34,14 @@ body {
 }
 
 .card {
-  padding: 20px;
-  background-color: $lav;
-  margin-bottom: 40px;
+  border-style: inset;
+  color: #fff;
+  border-radius: 23px;
+  padding: 23px;
+  vertical-align: middle;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  background-color: rgba(76, 86, 96, 0.7);
 }
 
 // ___Project's Section___ //
@@ -53,7 +58,7 @@ body {
 // ___About Section___ //
 
 #splash {
-  background: url("/images/splash.jpg") no-repeat 50% 50% fixed; 
+  background: url("/images/splash.jpg") no-repeat 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
