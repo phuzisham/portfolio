@@ -14,9 +14,10 @@ $body: #DCE4E7;
 // ___Global Styles___ //
 
 header {
+  font-family: 'Krona One', sans-serif;
   z-index: 1;
   padding: 10px;
-  background-color: #7481af;
+  background-color: rgba(76, 86, 96, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -25,8 +26,13 @@ header {
 }
 
 header h3 {
+  color: #7481af;
   float: right;
   margin-top: -5px;
+}
+
+header a {
+  color: #b1a7ba;
 }
 
 body {
