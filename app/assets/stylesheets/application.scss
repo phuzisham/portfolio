@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+// ___Color Codes___ //
+
 $dusty: #96858F;
 $dustyLight: #ccb9c4;
 $lav: #6D7993;
@@ -8,6 +10,8 @@ $paper: #D5D5D5;
 
 $header: #A0B7C5;
 $body: #DCE4E7;
+
+// ___Global Styles___ //
 
 header {
   z-index: 1;
@@ -34,6 +38,8 @@ body {
   background-color: $lav;
   margin-bottom: 40px;
 }
+
+// ___Project's Section___ //
 
 .projectImage img {
   width: 90%;
