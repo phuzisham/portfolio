@@ -53,7 +53,7 @@ body {
 // ___About Section___ //
 
 #splash {
-  background: url("/images/splash.jpg") no-repeat center;
+  background: url("/images/splash.jpg") no-repeat 50% 50% fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
