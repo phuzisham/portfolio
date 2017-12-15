@@ -622,6 +622,9 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/Phuzisham/Desktop/portfolio/spec/models/user_spec.rb": [
@@ -632,6 +635,6 @@
         null
       ]
     },
-    "timestamp": 1512170505
+    "timestamp": 1513363975
   }
 }
