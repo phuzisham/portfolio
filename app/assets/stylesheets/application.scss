@@ -49,3 +49,14 @@ body {
 .projectImage {
   text-align: center;
 }
+
+// ___About Section___ //
+
+#splash {
+  background: url("/images/splash.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 60px;
+}
