@@ -71,3 +71,9 @@ body {
   background-size: cover;
   padding: 60px;
 }
+
+.profPics {
+  max-width: 100%;
+  border-radius: 23px;
+  filter: grayscale(30%);
+}
