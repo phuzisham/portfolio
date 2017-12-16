@@ -75,5 +75,17 @@ body {
 .profPics {
   max-width: 100%;
   border-radius: 23px;
+}
+
+#profPic {
+  width: 25%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#profPic img {
+  max-width: 100%;
+  border-radius: 50%;
   filter: grayscale(30%);
 }
