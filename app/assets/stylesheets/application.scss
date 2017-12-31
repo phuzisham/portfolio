@@ -2,23 +2,44 @@
 
 // ___Color Codes___ //
 
-$dusty: #96858F;
-$dustyLight: #ccb9c4;
-$lav: #6D7993;
-$overcast: #9099A2;
-$paper: #D5D5D5;
-
-$header: #A0B7C5;
-$body: #DCE4E7;
+$aColor: #b1a7ba;
+$cardText: #cac9e0;
+$cardBody: rgba(76, 86, 96, 0.7);
+$headerColor: rgba(76, 86, 96, 0.95);
 
 // ___Global Styles___ //
+
+a {
+  color: $aColor;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.card {
+  border-style: inset;
+  color: $cardText;
+  border-radius: 23px;
+  padding: 23px;
+  vertical-align: middle;
+  margin-bottom: 90px;
+  background-color: $cardBody;
+}
+
+img {
+  filter: grayscale(50%);
+}
+
+// ___Header Styles___ //
+
 @mixin dark-overlay{
   &:after{
     content: "";
     width: 100%;
     height: auto;
     position: absolute;
-    z-index: -1;  // Take note of this negative z-index and compare to each article's positive z-index. This helps your content to show up over the overlay.
+    z-index: -1;
     top: 0;
     right: 0;
     left: 0;
@@ -29,7 +50,7 @@ $body: #DCE4E7;
 header {
   z-index: 1;
   padding: 10px;
-  background-color: rgba(76, 86, 96, 0.95);
+  background-color: $headerColor;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,45 +66,14 @@ header:after {
 }
 
 header h3 {
-  color: #c1c0d7;
+  color: $cardText;
   float: right;
 }
 
-a {
-  color: #b1a7ba;
-}
+// ___Home Section___ //
 
-body {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: $body;
-  color: #564566;
-}
-
-.card {
-  border-style: inset;
-  color: #cac9e0;
-  border-radius: 23px;
-  padding: 23px;
-  vertical-align: middle;
-  margin-bottom: 90px;
-  background-color: rgba(76, 86, 96, 0.7);
-}
-
-// ___Project's Section___ //
-
-.projectImage img {
-  width: 90%;
-  border-radius: 23px;
-}
-
-.projectImage {
-  text-align: center;
-}
-
-// ___About Section___ //
-
-.aboutBack {
-  background: url("/images/aboutBack.jpg") no-repeat 50% 50% fixed;
+#homeBack {
+  background: url("/images/homeBack.jpg") no-repeat 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -91,8 +81,22 @@ body {
   padding: 60px;
 }
 
-.aboutBack2 {
-  background: url("/images/woods.jpg") no-repeat 50% 50% fixed;
+#splash {
+  color: $cardText;
+  text-align: center;
+}
+
+#splash i {
+  font-size: 8rem;
+  display: inline-flex;
+  margin: 40px;
+  margin-top: 0px;
+}
+
+// ___About Section___ //
+
+#aboutBack {
+  background: url("/images/aboutBack.jpg") no-repeat 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -105,10 +109,6 @@ body {
   border-radius: 23px;
 }
 
-img {
-  filter: grayscale(50%);
-}
-
 #profPic {
   width: 25%;
   float: right;
@@ -119,20 +119,20 @@ img {
 #profPic img {
   max-width: 100%;
   border-radius: 50%;
-  // filter: grayscale(50%);
 }
 
-// ___Home Section___ //
+// ___Project's Section___ //
 
-#splash {
-  color: #cac9e0;
-  text-align: center;
+#projectsBack {
+  background: url("/images/projectsBack.jpg") no-repeat 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 60px;
 }
 
-#splash i {
-  font-size: 8rem;
-  display: inline-flex;
-  margin: 40px;
-  margin-top: 0px;
-
+.projectImage img {
+  width: 40%;
+  border-radius: 23px;
 }

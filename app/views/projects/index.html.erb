@@ -1,17 +1,20 @@
-<% if @projects.any? %>
-  <div class="card">
-    <% @projects.each do |p| %>
-      <h4><%= p.title %></h4>
-      <div class="projectImage">
-        <%= image_tag(p.photo) %>
-      </div>
-      <br>
-      <p><%= p.description %></p>
-      <hr>
-    <% end %>
-  </div>
-<% else %>
-  <div class="card">
-    <h4>No projects yet.</h4>
-  </div>
-<% end %>
+<body id="projectsBack">
+  <% if @projects.any? %>
+    <div class="card">
+      <% @projects.each do |p| %>
+        <div class="row">
+          <h4><%= p.title %></h4>
+          <div class="projectImage">
+            <%= image_tag(p.photo) %>
+          </div>
+          <p><%= p.description %></p>
+          <hr>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <div class="card">
+      <h4>No projects yet.</h4>
+    </div>
+  <% end %>
+</body>
