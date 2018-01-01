@@ -136,10 +136,12 @@ header h3 {
 .projectImage {
   width: 40%;
   float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .projectImage img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 23px;
 }
 
