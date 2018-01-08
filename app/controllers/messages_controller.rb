@@ -10,6 +10,7 @@ class MessagesController < ApplicationController
       MessageMailer.contact_me(@message).deliver_now
       redirect_to new_message_path, notice: "Message received"
     else
+      flash[:alert] = @message.errors.full_messages.join(', ') 
       render :new
     end
   end
