@@ -5,7 +5,7 @@
 $aColor: #b1a7ba;
 $cardText: #d9d8ed;
 $cardBody: rgba(76, 86, 96, 0.7);
-$headerColor: rgba(76, 86, 96, 0.95);
+$headerColor: rgb(76, 86, 96);
 
 // ___Global Styles___ //
 
@@ -201,6 +201,10 @@ header a {
   text-align: center;
 }
 
-#mediaButtons i {
+#mediaButtons a {
   margin: 20px;
+}
+
+#mediaButtons a:hover {
+  color: $aColor;
 }
