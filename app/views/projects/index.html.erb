@@ -2,13 +2,15 @@
   <% if @projects.any? %>
     <div class="card">
       <% @projects.each do |p| %>
-        <h4><%= p.title %></h4>
         <div class="row">
           <div class="col-sm-12">
+            <div class="projectTitle">
+              <h3><%= p.title %></h3>
+            </div>
+            <p><%= p.description %></p>
             <div class="projectImage">
               <%= image_tag(p.photo) %>
             </div>
-            <p><%= p.description %></p>
           </div>
         </div>
         <hr>

@@ -158,15 +158,17 @@ header a {
 }
 
 .projectImage {
-  width: 40%;
-  float: left;
-  margin-right: 20px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .projectImage img {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 23px;
+}
+
+.projectTitle {
+  text-align: center;
 }
 
 // __Contact Section__ //
