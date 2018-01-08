@@ -4,7 +4,7 @@
       <div class="col-md-7">
         <h4>Contact</h4>
         <p>Please send me a meessage if you have any questions about my experience or to request a resume. You can also challenge me to a game of chess, provide book recommendations, or just say <em>"Hello"</em>. If filling out forms isn't your thing then click on the social media icon of your choice below. I look forward to hearing from you.</p>
-
+        <hr>
         <div id="mediaButtons">
           <i target="_blank" href="https://www.linkedin.com/in/david-hale-a5756a13a/" class="fa fa-lg fa-linkedin"></i>
           <i target="_blank" href="https://github.com/phuzisham" class="fa fa-lg fa-github"></i>
@@ -24,11 +24,15 @@
           </div>
           <br>
           <div class="field">
+            <%= f.email_field :subject, placeholder: 'subject', style: 'width:55%;', class: 'formBack' %>
+          </div>
+          <br>
+          <div class="field">
             <%= f.text_area :body, placeholder: 'body', :rows => 5, style: 'width:100%;', class: 'formBack' %>
           </div>
           <br>
           <div class="field">
-            <%= f.submit 'Send', class: 'btn' %>
+            <%= f.submit 'Send Message', class: 'btn' %>
           </div>
         <% end %>
       </div>

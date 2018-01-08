@@ -1,5 +1,5 @@
 class Message
   include ActiveModel::Model
-  attr_accessor :name, :email, :body
-  validates :name, :email, :body, presence: true
+  attr_accessor :name, :email, :body, :subject
+  validates :name, :email, :body, :subject, presence: true
 end

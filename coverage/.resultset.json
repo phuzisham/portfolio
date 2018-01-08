@@ -615,6 +615,7 @@
         null,
         1,
         1,
+        1,
         null
       ],
       "/Users/Phuzisham/Desktop/portfolio/app/models/user.rb": [
@@ -634,39 +635,62 @@
         1,
         null
       ],
+      "/Users/Phuzisham/Desktop/portfolio/spec/mailers/message_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        3,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Phuzisham/Desktop/portfolio/app/mailers/message_mailer.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/Phuzisham/Desktop/portfolio/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Phuzisham/Desktop/portfolio/spec/models/message_spec.rb": [
         1,
         null,
         1,
-        null,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Phuzisham/Desktop/portfolio/app/models/message.rb": [
         1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        null,
         1,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0,
-        0,
-        null,
-        null,
         1,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
+        1,
         null
       ],
       "/Users/Phuzisham/Desktop/portfolio/spec/models/project_spec.rb": [
@@ -696,6 +720,6 @@
         null
       ]
     },
-    "timestamp": 1515385160
+    "timestamp": 1515441290
   }
 }
