@@ -1,0 +1,37 @@
+<body id="contactBack">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-7">
+        <h4>Contact</h4>
+        <p>Please send me a meessage if you have any questions about my experience or to request a resume. You can also challenge me to a game of chess, provide book recommendations, or just say <em>"Hello"</em>. If filling out forms isn't your thing then click on the social media icon of your choice below. I look forward to hearing from you.</p>
+
+        <div id="mediaButtons">
+          <i target="_blank" href="https://www.linkedin.com/in/david-hale-a5756a13a/" class="fa fa-lg fa-linkedin"></i>
+          <i target="_blank" href="https://github.com/phuzisham" class="fa fa-lg fa-github"></i>
+          <i target="_blank" href="https://www.instagram.com/phuzisham/" class="fa fa-lg fa-instagram"></i>
+          <i target="_blank" href="https://www.facebook.com/david.hale.771" class="fa fa-lg fa-facebook"></i>
+          <i target="_blank" href="https://twitter.com/phuzisham" class="fa fa-lg fa-twitter"></i>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <%= form_for @message, url: create_message_url do |f| %>
+          <div class="field">
+            <%= f.text_field :name, placeholder: 'name', style: 'width:55%;', class: 'formBack' %>
+          </div>
+          <br>
+          <div class="field">
+            <%= f.email_field :email, placeholder: 'email', style: 'width:55%;', class: 'formBack' %>
+          </div>
+          <br>
+          <div class="field">
+            <%= f.text_area :body, placeholder: 'body', :rows => 5, style: 'width:100%;', class: 'formBack' %>
+          </div>
+          <br>
+          <div class="field">
+            <%= f.submit 'Send', class: 'btn' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>

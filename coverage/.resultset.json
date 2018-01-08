@@ -1,13 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Phuzisham/Desktop/portfolio/spec/models/project_spec.rb": [
+      "/Users/Phuzisham/Desktop/portfolio/spec/controllers/messages_controller_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
-        2,
+        null,
+        1,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/Phuzisham/Desktop/portfolio/spec/rails_helper.rb": [
@@ -582,6 +592,13 @@
         null,
         null
       ],
+      "/Users/Phuzisham/Desktop/portfolio/spec/factories/messages.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/Phuzisham/Desktop/portfolio/spec/factories/users.rb": [
         1,
         1,
@@ -617,6 +634,50 @@
         1,
         null
       ],
+      "/Users/Phuzisham/Desktop/portfolio/spec/models/message_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/Phuzisham/Desktop/portfolio/spec/models/project_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
       "/Users/Phuzisham/Desktop/portfolio/app/models/project.rb": [
         1,
         1,
@@ -635,6 +696,6 @@
         null
       ]
     },
-    "timestamp": 1514851514
+    "timestamp": 1515385160
   }
 }

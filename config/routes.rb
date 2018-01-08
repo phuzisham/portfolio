@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :projects
 
   get 'about', :to => 'home#about'
-  get 'contact', :to => 'home#contact'
+  get 'contact', to: 'messages#new', as: 'new_message'
+  post 'contact', to: 'messages#create', as: 'create_message'
 end
