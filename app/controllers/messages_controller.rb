@@ -8,9 +8,9 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.contact_me(@message).deliver_now
-      redirect_to new_message_path, notice: "Message received"
+      redirect_to new_message_path, notice: "Message received!"
     else
-      flash[:alert] = @message.errors.full_messages.join(', ') 
+      flash[:alert] = @message.errors.full_messages.join(' -- ')
       render :new
     end
   end
@@ -18,6 +18,6 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:name, :email, :body)
+    params.require(:message).permit(:name, :email, :body, :subject)
   end
 end
