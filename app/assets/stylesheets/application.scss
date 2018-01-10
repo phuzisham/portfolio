@@ -2,10 +2,10 @@
 
 // ___Color Codes___ //
 
-$aColor: #b1a7ba;
-$cardText: #d9d8ed;
+$aColor: #cec2d9;
+$cardText: #D4D4D2;
 $cardBody: rgba(76, 86, 96, 0.7);
-$headerColor: rgb(76, 86, 96);
+$headerColor: rgba(76, 86, 96, 0.7);
 
 // ___Global Styles___ //
 
@@ -71,6 +71,7 @@ header {
   z-index: 1;
   padding: 10px;
   background-color: $headerColor;
+  background: url("/images/aboutBack.jpg") no-repeat 50% 50% fixed;
   position: fixed;
   top: 0;
   left: 0;

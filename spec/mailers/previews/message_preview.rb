@@ -4,7 +4,8 @@ class MessageMailerPreview < ActionMailer::Preview
   def contact_me
     message = Message.new name: 'marflar',
                           email: 'marflar@example.org',
-                          body: 'This is the body of the email'
+                          body: 'This is the body of the email',
+                          subject: 'This is the subject.'
 
     MessageMailer.contact_me message
   end
