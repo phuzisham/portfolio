@@ -35,6 +35,7 @@ gem 'devise'
 gem 'rails_admin'
 gem 'jquery-rails'
 gem 'faker'
+gem 'aws-sdk', '~> 2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :development, :test do
