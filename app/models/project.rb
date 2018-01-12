@@ -1,6 +1,4 @@
 class Project < ApplicationRecord
-  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
-
   validates :title, :presence => true
   validates :title, :uniqueness => true
   validates :description, :presence => true
