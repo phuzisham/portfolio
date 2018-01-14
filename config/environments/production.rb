@@ -4,6 +4,23 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'yourapp.heroku.com',
+    :authentication => :plain,
+  }
+  ActionMailer::Base.delivery_method = :smtp
+
+  config.paperclip_defaults = { :storage => :s3,
+    :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']},
+    :s3_host_name => 's3-us-west-2.amazonaws.com'}
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
