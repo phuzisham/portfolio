@@ -2,6 +2,6 @@ class MessageMailer < ActionMailer::Base
   def contact_me(message)
     @body = message.body
 
-    mail to: "david.hale7@gmail.com", from: message.email, subject: message.subject
+    mail to: ENV['MY_EMAIL'], from: message.email, subject: message.subject
   end
 end
