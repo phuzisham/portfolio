@@ -38,10 +38,9 @@
     <small>©2018 - David Hale</small>
     <small>
       <% if user_signed_in? %>
-        <%= link_to('Admin', rails_admin_path)  %> |
-        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        <%= link_to('Admin', rails_admin_path)  %> <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
       <% else %>
-        <%= link_to('Site Admin', rails_admin_path)  %>
+        <%= link_to('Site Admin', rails_admin_path) %>
       <% end %>
     </small>
   </footer>
