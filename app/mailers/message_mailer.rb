@@ -1,4 +1,4 @@
-class MessageMailer
+class MessageMailer < ActionMailer::Base
   def contact_me(message)
     @body = message.body
 
