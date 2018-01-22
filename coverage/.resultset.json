@@ -202,6 +202,14 @@
         null,
         null
       ],
+      "/Users/Phuzisham/Desktop/portfolio/config/initializers/aws.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
       "/Users/Phuzisham/Desktop/portfolio/config/initializers/backtrace_silencers.rb": [
         null,
         null,
@@ -527,6 +535,10 @@
         null,
         null
       ],
+      "/Users/Phuzisham/Desktop/portfolio/config/initializers/paperclip.rb": [
+        1,
+        1
+      ],
       "/Users/Phuzisham/Desktop/portfolio/config/initializers/rails_admin.rb": [
         1,
         null,
@@ -592,20 +604,6 @@
         null,
         null
       ],
-      "/Users/Phuzisham/Desktop/portfolio/spec/factories/messages.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Phuzisham/Desktop/portfolio/spec/factories/users.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
       "/Users/Phuzisham/Desktop/portfolio/config/routes.rb": [
         1,
         1,
@@ -657,23 +655,11 @@
       ],
       "/Users/Phuzisham/Desktop/portfolio/app/mailers/message_mailer.rb": [
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         0,
         null,
         0,
         null,
-        null
-      ],
-      "/Users/Phuzisham/Desktop/portfolio/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
         null
       ],
       "/Users/Phuzisham/Desktop/portfolio/spec/models/message_spec.rb": [
@@ -710,6 +696,11 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/Phuzisham/Desktop/portfolio/spec/models/user_spec.rb": [
@@ -720,6 +711,6 @@
         null
       ]
     },
-    "timestamp": 1515534857
+    "timestamp": 1516645101
   }
 }
