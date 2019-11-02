@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'devise', '~> 4.4'
+gem 'devise', '~> 4.7'
 gem 'rails_admin', '~> 1.3'
 gem 'jquery-rails', '~> 4.3'
 gem 'aws-sdk', '~> 2'
